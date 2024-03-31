@@ -1,4 +1,8 @@
-import { JsonRpcErrorOptions, JsonRpcErrorObject, JsonRpcErrorResponse } from '../types/mod.ts'
+import {
+  JsonRpcErrorObject,
+  JsonRpcErrorOptions,
+  JsonRpcErrorResponse,
+} from "../types/mod.ts";
 
 export function error({ code, message, status, id }: JsonRpcErrorOptions) {
   const error: JsonRpcErrorObject = { code, message };

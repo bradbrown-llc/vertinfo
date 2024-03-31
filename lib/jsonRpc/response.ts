@@ -1,4 +1,4 @@
-import { JsonRpcResponseOptions, JsonRpcResponse } from '../types/mod.ts'
+import { JsonRpcResponse, JsonRpcResponseOptions } from "../types/mod.ts";
 
 function replacer(_key: string, value: unknown) {
   return typeof value == "bigint" ? `0x${value.toString(16)}` : value;

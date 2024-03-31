@@ -1,5 +1,5 @@
 import * as jsonRpc from "../jsonRpc/mod.ts";
-import { JsonRpcId } from '../types/mod.ts'
+import { JsonRpcId } from "../types/mod.ts";
 
 export function invalidParams(id: JsonRpcId) {
   return jsonRpc.error({
